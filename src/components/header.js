@@ -4,7 +4,7 @@ import React from "react";
 import { Button, Navbar, Nav, NavItem } from "react-bootstrap";
 
 const Header = ({ siteTitle }) => (
-  <Navbar bg="dark" variant="dark" expand="lg">
+  <Navbar bg="light" variant="light" expand="lg">
     <Navbar.Brand as={Link} href="/">
       {siteTitle}
     </Navbar.Brand>
