@@ -1,50 +1,64 @@
 import React from "react";
-import { Col, Row, Card, ListGroup } from "react-bootstrap";
+import { Col, Row, Table } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 const AboutPage = () => (
   <Layout>
     <SEO title="About" />
+    
     <Row>
-      <Col>
-        <h1>About</h1>
-        <p>This is a basic gatsby starter</p>
-      </Col>
+        <Col className="space"></Col>
     </Row>
+
     <Row>
-      <Col md="6">
-        <Card>
-          <Card.Body>
-            <Card.Title>Features</Card.Title>
-            <Card.Text>
-              <ListGroup>
-                <ListGroup.Item>
-                  Uses react-bootstrap and little else
-                </ListGroup.Item>
-                <ListGroup.Item>
-                  Optional theme support with bootswatch
-                </ListGroup.Item>
-                <ListGroup.Item>SCSS styling</ListGroup.Item>
-              </ListGroup>
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </Col>
-      <Col md="6">
-        <Card>
-          <Card.Body>
-            <Card.Title>More Information</Card.Title>
-            <Card.Text>
-              <ListGroup>
-                <ListGroup.Item action href="https://mik3y.github.io/gatsby-starter-basic-bootstrap/">Visit the demo page</ListGroup.Item>
-                <ListGroup.Item action href="https://github.com/mik3y/gatsby-starter-basic-bootstrap">View/edit on github</ListGroup.Item>
-              </ListGroup>
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </Col>
+        <Col className="title-obi">
+            <h1 className="h1-font">会社概要</h1>
+        </Col>
     </Row>
+
+    <Row>
+        <Col className="space"></Col>
+    </Row>
+
+    <Row>
+        <Col>
+            <Table striped bordered hover>
+                <tbody>
+                    <tr>
+                        <td>社名</td>
+                        <td>ヤー・スペーステクノロジー</td>
+                    </tr>
+
+                    <tr>
+                        <td>本社</td>
+                        <td>東京都港区〇〇〇</td>
+                    </tr>
+
+                    <tr>
+                        <td>設立</td>
+                        <td>2021年1月4日</td>
+                    </tr>
+
+                    <tr>
+                        <td>資本金</td>
+                        <td>10,000,000円</td>
+                    </tr>
+
+                    <tr>
+                        <td>代表者</td>
+                        <td>山田　太郎</td>
+                    </tr>
+
+                </tbody>
+            </Table>
+        </Col>
+    </Row>
+    
+    <Row>
+        <Col className="space"></Col>
+    </Row>
+
   </Layout>
 );
 
