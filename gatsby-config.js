@@ -18,7 +18,7 @@ module.exports = {
         resolve: `gatsby-plugin-robots-txt`,
         options: {
             host: `https://epic-mahavira-1bfdf3.netlify.app`,
-            sitemap: `https://epic-mahavira-1bfdf3.netlify.app/sitemap.xml`,
+            sitemap: `https://epic-mahavira-1bfdf3.netlify.app/sitemap/sitemap-0.xml`,
             policy: [{userAgent: '*', allow: '/'}]
         },
     },
