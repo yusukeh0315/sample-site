@@ -7,6 +7,7 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "bootswatch": "^4.4.1",
+    "fontsource-noto-sans-jp": "^4.0.0",
     "gatsby": "^2.20.12",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-manifest": "^2.3.3",
@@ -14,14 +15,17 @@
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-sass": "^2.2.1",
     "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-remark-images": "^5.7.0",
     "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-remark": "^4.7.0",
     "gatsby-transformer-sharp": "^2.4.3",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "typeface-lato": "^1.1.13"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",

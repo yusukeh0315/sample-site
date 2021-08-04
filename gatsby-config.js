@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Basic Bootstrap Starter`,
+    title: `ヤー・スペーステクノロジー`,
     description: `A simple Gatsby starter leveraging react-bootstrap and little else.`,
     author: `@mik3y`,
   },
@@ -11,6 +11,10 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+      options: {
+        name: `information`,
+        path: `${__dirname}/src/content/information`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -36,6 +40,19 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+        resolve: `gatsby-transformer-remark`,
+        options: {
+            plugins: [
+                {
+                    resolve: `gatsby-remark-images`,
+                    options: {
+                        maxWidth:590,
+                    },
+                },
+            ],
+        },
+    },
   ],
   pathPrefix: "gatsby-starter-basic-bootstrap",
 };

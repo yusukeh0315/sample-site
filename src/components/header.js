@@ -1,37 +1,48 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
-import { Button, Navbar, Nav, NavItem } from "react-bootstrap";
+import { Navbar, Nav, NavItem } from "react-bootstrap";
 
 const Header = ({ siteTitle }) => (
-  <Navbar bg="dark" variant="dark" expand="lg">
-    <Navbar.Brand as={Link} href="/">
-      {siteTitle}
-    </Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="mr-auto">
-        <NavItem href="/about">
-          <Nav.Link as={Link} activeClassName="active" to="/about">
-            About
-          </Nav.Link>
-        </NavItem>
-      </Nav>
-      <Nav className="ml-auto">
-        <Button variant="success" onClick={() => alert("Sign Up")}>
-          Sign Up
-        </Button>
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
+    <Navbar bg="light" variant="light" expand="lg">
+        <Navbar.Brand as={Link} href="/">
+        {siteTitle}
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+            <NavItem href="/about">
+            <Nav.Link as={Link} activeClassName="active" to="/about">
+                会社概要
+            </Nav.Link>
+            </NavItem>
+            <NavItem href="/business">
+            <Nav.Link as={Link} activeClassName="active" to="/business">
+                事業内容
+            </Nav.Link>
+            </NavItem>
+            <NavItem href="/information">
+            <Nav.Link as={Link} activeClassName="active" to="/information">
+                インフォメーション
+            </Nav.Link>
+            </NavItem>
+            <NavItem href="/contact">
+            <Nav.Link as={Link} activeClassName="active" to="/contact">
+                お問い合わせ
+            </Nav.Link>
+            </NavItem>
+
+        </Nav>
+        </Navbar.Collapse>
+    </Navbar>
 );
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+    siteTitle: PropTypes.string,
 };
 
 Header.defaultProps = {
-  siteTitle: ``,
+    siteTitle: ``,
 };
 
 export default Header;
