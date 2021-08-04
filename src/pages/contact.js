@@ -27,8 +27,8 @@ const ContactPage = () => (
 
             <Row>
                 <Col>
-                    <p>このサンプルサイトで送信機能は使用できません。</p>
-                    <Form>
+                    <Form method="post" name="contact" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact" />
                         <Form.Group controlId="formBasicText">
                             <Form.Control type="text" as="input" placeholder="お名前" name="name" required />
                         </Form.Group>
