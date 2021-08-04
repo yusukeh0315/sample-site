@@ -3,8 +3,25 @@ module.exports = {
     title: `ヤー・スペーステクノロジー`,
     description: `A simple Gatsby starter leveraging react-bootstrap and little else.`,
     author: `@mik3y`,
+    siteUrl: `https://epic-mahavira-1bfdf3.netlify.app/`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
+    {
+        resolve: `gatsby-plugin-canonical-urls`,
+        options: {
+            siteUrl: `https://epic-mahavira-1bfdf3.netlify.app`,
+            stripQueryString:true,
+        },
+    },
+    {
+        resolve: `gatsby-plugin-robots-txt`,
+        options: {
+            host: `https://epic-mahavira-1bfdf3.netlify.app`,
+            sitemap: `https://epic-mahavira-1bfdf3.netlify.app/sitemap.xml`,
+            policy: [{userAgent: '*', allow: '/'}]
+        },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
