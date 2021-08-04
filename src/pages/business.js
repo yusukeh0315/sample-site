@@ -4,7 +4,6 @@ import { Row, Col, Card } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 // import { Link } from "gatsby";
-import homeImg from "../images/home.jpg";
 import businessImg1 from "../images/business-description1.jpg";
 import businessImg2 from "../images/business-description2.jpg";
 import businessImg3 from "../images/business-description3.jpg";
