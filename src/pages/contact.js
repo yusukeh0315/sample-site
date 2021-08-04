@@ -27,8 +27,11 @@ const ContactPage = () => (
 
             <Row>
                 <Col>
-                    <Form method="post" name="contact" data-netlify="true">
-                        <input type="hidden" name="form-name" value="contact" />
+                    <Form method="post" 
+                        action="https://www.flexyform.com/f/6b68836a9cdc6e7f2a5f1f7d39e6b4ac8ba8c6cd"
+                        enctype="multipart/form-data">
+                        <Form.Control type="text" as="input" style={{visibility:`hidden`}} name="_empty_field" />
+
                         <Form.Group controlId="formBasicText">
                             <Form.Control type="text" as="input" placeholder="お名前" name="name" required />
                         </Form.Group>
